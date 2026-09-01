@@ -1,8 +1,4 @@
-----------------------------------------------------------------------------
-Este é o arquivo README do projeto. Você deve descrever aqui o seu projeto.
-Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
-ele/ela precisa saber. Os comentários devem incluir, pelo menos:
-------------------------------------------------------------------------
+
 
 TÍTULO DO PROJETO: SISTEMA DE MONITORAMENTO PEDAGÓGICO DE CURSOS DE TÉCNOLOGIA DA ESCOLA POLITÉCNICA DA PUCRS
 
@@ -11,7 +7,7 @@ verificando se  estão utilizando ferramentas de IA no processo de aprendizagem,
 indicar uso pouco formativo, dependência excessiva ou fragilidade na compreensão do
 código produzido.
 
-AUTORES: Eduardo Quadra Siminovich - 26102761, Felipe Kreismann Brigo - 26102885, Felipe Nonticuri Martins Netto - 26102890
+AUTORES: Eduardo Quadra Siminovich, Felipe Kreismann Brigo, Felipe Nonticuri Martins Netto
 
 DESCRIÇÃO GERAL DO SISTEMA: O programa apresenta um menu com 15 opções de monitoramento, visualização e cadastro de estudantes
 e suas respectivas informações a respeito de todos os possíveis atributos vinculados a eles.
@@ -30,8 +26,6 @@ concentra o controle e o processamento do desempenho acadêmico do estudante.
 
 LÓGICA PARA RISCO PEDAGÓGICO: Alunos com risco baixo utilizam a IA de forma consciente, conseguem explicar e modificar seus códigos e demonstram domínio do conteúdo. No risco moderado, há sinais de dependência parcial da IA 
 e dificuldades em compreender ou alterar as soluções. Já o risco alto caracteriza alunos que dependem fortemente da IA, não conseguem explicar ou modificar os códigos produzidos e utilizam estruturas que ainda não dominam.
-
-FONTES DE CONSULTAS UTILIZADAS: Não utilizamos nenhuma fonte de consulta.
 
 FERRAMENTAS DE IA UTILIZADAS: Consultamos o Claude AI para tentar utilizar o "tratamento de exceção". A principal dúvida era como aplicar o método de leitura em diferentes partes do programa, tanto com quanto sem uma mensagem ao usuário. Como solução, foi implementada a sobrecarga do método `lerInteiro`, criando uma versão que recebe apenas o Scanner e outra que recebe o Scanner e uma mensagem. A primeira apenas chama a segunda passando uma mensagem vazia, reutilizando toda a lógica de validação em um único método. Essa abordagem reduziu a duplicação de código, facilitou a reutilização da função e tornou a leitura de dados mais segura por meio do tratamento de exceções (try/catch).
 
